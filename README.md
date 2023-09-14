@@ -6,7 +6,7 @@ https://www.youtube.com/@gemini_security
 
 https://www.youtube.com/watch?v=36O2qDrHQnk
 
-credits for the references/files used:
+## credits for the references/files used:
 
 demo.rc - template resource .rc file:
 
