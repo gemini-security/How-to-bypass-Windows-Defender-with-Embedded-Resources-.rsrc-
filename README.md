@@ -1,0 +1,1 @@
+# How-to-bypass-Windows-Defender-with-Embedded-Resources-.rsrc-
