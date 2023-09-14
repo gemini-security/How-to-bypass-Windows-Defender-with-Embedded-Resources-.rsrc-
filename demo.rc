@@ -1,0 +1,66 @@
+#include "winver.h"
+ 
+#define IDI_ICON1                       101
+#define IDI_BIN1                       	102
+#define IDI_BIN2			103
+ 
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+ 
+#define VER_FILEVERSION             0,0,0,1
+#define VER_FILEVERSION_STR         "0.0.0.1\0"
+ 
+#define VER_PRODUCTVERSION          0,0,0,1
+#define VER_PRODUCTVERSION_STR      "0.0.0.1\0"
+ 
+#ifndef DEBUG
+#define VER_DEBUG                   0
+#else
+#define VER_DEBUG                   VS_FF_DEBUG
+#endif
+ 
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     VER_FILEVERSION
+PRODUCTVERSION  VER_PRODUCTVERSION
+FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+FILEFLAGS       VER_DEBUG
+FILEOS          VOS__WINDOWS32
+FILETYPE        VFT_APP
+FILESUBTYPE     VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName", "example.com"
+            VALUE "FileDescription", "demo"
+            VALUE "FileVersion", VER_FILEVERSION_STR
+            VALUE "InternalName", "demo.exe"
+            VALUE "LegalCopyright", "Public domain"
+            VALUE "OriginalFilename", "demo.exe"
+            VALUE "ProductName", "demo"
+            VALUE "ProductVersion", VER_PRODUCTVERSION_STR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+ 
+ 
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+ 
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "demo.ico"
+/////////////////////////////////////////////////////////////////////////////
+// Payloads
+IDI_BIN1		BIN1			"cipher.bin"
+IDI_BIN2		BIN2			"key.bin"
+                                                          
