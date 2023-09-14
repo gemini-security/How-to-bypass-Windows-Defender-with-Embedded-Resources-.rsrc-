@@ -12,8 +12,7 @@ demo.rc - template resource .rc file:
 
 https://blog.didierstevens.com/2018/09/17/quickpost-compiling-exes-and-resources-with-mingw-on-kali/
 
-aes.py - for aes encryption:
-DecryptAES function:
+aes.py - for aes encryption and DecryptAES function:
 
 https://github.com/TheD1rkMtr/FilelessPELoader/tree/main
 
